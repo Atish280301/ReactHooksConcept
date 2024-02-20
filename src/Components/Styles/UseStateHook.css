@@ -1,0 +1,8 @@
+.USH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BTN{
+    margin: 10px;
+}
