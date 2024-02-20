@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../Styles/UseStateHook.css';
 import UseStateHook1 from "./UseStateHook1";
+import UseStateHook2 from "./UseStateHook2";
 const UseStateHook = () => {
     const [num, setNum] = useState(0);
     const UP = () => {
@@ -21,6 +22,7 @@ const UseStateHook = () => {
                 <button className="BTN" onClick={DOWN}>-</button>
             </div>
             <UseStateHook1 />
+            <UseStateHook2 />
         </>
     );
 }
