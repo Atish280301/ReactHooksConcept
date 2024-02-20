@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../Styles/UseStateHook.css';
+import UseStateHook1 from "./UseStateHook1";
 const UseStateHook = () => {
     const [num, setNum] = useState(0);
     const UP = () => {
@@ -19,6 +20,7 @@ const UseStateHook = () => {
                 <h2>{num}</h2>
                 <button className="BTN" onClick={DOWN}>-</button>
             </div>
+            <UseStateHook1 />
         </>
     );
 }
