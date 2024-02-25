@@ -5,9 +5,15 @@ import Intro from "./Components/Intro/Intro";
 import UseEffectHook from "./Components/UseEffectHook/UseEffectHook";
 import UseReduerHook from "./Components/UseReducer/UseReducerHook";
 import UseRefHook from "./Components/UseRefHook/UseRefHook";
+import UseCallback from "./Components/UseCallBack/UseCallback";
+import HistoryF from "./Components/HistoryF/HistoryF";
+import LocationS from "./Components/Location/LocationS";
+import { BrowserRouter as Router } from 'react-router-dom';
+
 const App = () => {
   return (
-    <div>
+    <Router>
+      <div>
       <Intro />
       <hr />
       <UseStateHook />
@@ -17,7 +23,14 @@ const App = () => {
       <UseReduerHook />
       <hr />
       <UseRefHook />
+      <hr />
+      <UseCallback />
+      <hr />
+      <HistoryF />
+      <hr />
+      <LocationS />
     </div>
+    </Router>
   );
 }
 export default App;
